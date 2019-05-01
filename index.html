@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Program Pengambil Keputusan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-primary container">
+    
+    <!-- <form class="bg-white container p-4 mt-4">
+        <div class="form-group row">
+            <label class="col-md-2 col-form-label">Baris</label>
+            <div class="col-md-4">
+                <input type="number" class="form-control" id="rows" placeholder="Masukkan banyak baris">
+            </div>
+            <label class="col-md-2 col-form-label">Kolom</label>
+            <div class="col-md-4">
+                <input type="number" class="form-control" id="columns" placeholder="Masukkan banyak kolom">
+            </div>
+        </div>
+    </form> -->
+
+    <div class="mt-4 container bg-white p-4">
+        <div class="row mt-3">
+            <div class="col-sm-4">
+                
+            </div>
+            <div class="col-sm-4">
+                θ1
+            </div>
+            <div class="col-sm-4">
+                θ2
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-4">
+                A1
+            </div>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="x11">
+            </div>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="x12">
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-4">
+                A2
+            </div>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="x21">
+            </div>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="x22">
+            </div>
+        </div>
+    </div>
+    <div class="mt-2 container bg-white p-4">
+        <div class="row mt-3">
+            <div class="col-sm-4">
+                Peluang
+            </div>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="p1">
+            </div>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="p2">
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" onclick="generate()">Generate</button>
+        </div>
+    </div>
+    <div class="mt-4 container bg-white p-4">
+        <div class="row mt-3">
+            <div class="col-sm-3">
+                Hasil dari maximin
+            </div>
+            <div class="col-sm-3">
+                <input type="number" id="maximin" readonly class="form-control-plaintext" value="0">
+            </div>
+            <div class="col-sm-3">
+                Hasil dari minimax
+            </div>
+            <div class="col-sm-3">
+                <input type="number" id="minimax" readonly class="form-control-plaintext" value="0">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-3">
+                Hasil dari likelihood
+            </div>
+            <div class="col-sm-3">
+                <input type="number" id="likelihood" readonly class="form-control-plaintext" value="0">
+            </div>
+            <div class="col-sm-3">
+                Hasil dari buyes decision rule
+            </div>
+            <div class="col-sm-3">
+                <input type="number" id="buyes" readonly class="form-control-plaintext" value="0">
+            </div>
+        </div>
+    </div>
+    
+    <script src="decision.js"></script>
+</body>
+
+</html>
