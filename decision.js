@@ -74,6 +74,14 @@ function getPeluang() {
 function generate() {
     let data = getData();
     let peluang = getPeluang();
+    
+    // Dummy data
+    // let data = [
+    //     [1400000, -300000],
+    //     [200000, 200000],
+    // ];
+    
+    // let peluang = [0.3,0.7]
 
     document.getElementById("maximin").value = maximin(data);
     document.getElementById("minimax").value = minimax(data);
